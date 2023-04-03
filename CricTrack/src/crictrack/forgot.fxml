@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crictrack.ForgotController">
+   <children>
+      <ImageView fitHeight="224.0" fitWidth="364.0" layoutX="301.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="210.0" layoutY="246.0" text="New Password: ">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="303.0" text="Retype Password: ">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="360.0" text="Email:">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="417.0" text="Phone:">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newP" layoutX="453.0" layoutY="251.0" onKeyReleased="#newPR" prefHeight="31.0" prefWidth="303.0" />
+      <TextField fx:id="retype" layoutX="453.0" layoutY="308.0" onKeyReleased="#retypeR" prefHeight="31.0" prefWidth="303.0" />
+      <TextField fx:id="email" layoutX="307.0" layoutY="365.0" prefHeight="31.0" prefWidth="448.0" />
+      <TextField fx:id="phone" layoutX="307.0" layoutY="422.0" prefHeight="31.0" prefWidth="448.0" />
+      <Button layoutX="407.0" layoutY="505.0" mnemonicParsing="false" onAction="#update" prefHeight="55.0" prefWidth="129.0" text="Update">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="49.0" mnemonicParsing="false" onAction="#back" text="Cancel">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Button>
+      <Label fx:id="newpassAlert" layoutX="453.0" layoutY="219.0" textFill="RED" />
+      <Label fx:id="passAlert2" layoutX="454.0" layoutY="286.0" textFill="RED" />
+      <Label fx:id="finalAlert" layoutX="306.0" layoutY="165.0" textFill="RED" />
+   </children>
+</AnchorPane>

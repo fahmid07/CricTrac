@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="myPane" prefHeight="694.0" prefWidth="965.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="crictrack.MatchReportController">
+   <children>
+      <ImageView fitHeight="153.0" fitWidth="330.0" layoutX="318.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="749.0" layoutY="38.0" text="Match Report" textFill="RED">
+         <font>
+            <Font name="Ador Shodesh Normal" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="57.0" layoutY="38.0" mnemonicParsing="false" onAction="#home" text="Home">
+         <font>
+            <Font name="Ador Shodesh Normal" size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="result" layoutX="351.0" layoutY="109.0" text="Team 1 won by 17 runs">
+         <font>
+            <Font name="Ador Shodesh Normal" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="t1s" layoutX="162.0" layoutY="167.0" text="Team1 285/10 (50 ov)">
+         <font>
+            <Font name="Ador Shodesh Normal" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="t2s" layoutX="648.0" layoutY="167.0" text="Team1 285/10 (50 ov)">
+         <font>
+            <Font name="Ador Shodesh Normal" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="t1bat" layoutX="57.0" layoutY="200.0" prefHeight="358.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="t1batt" prefWidth="75.0" text="Batsman" />
+          <TableColumn fx:id="t1w" prefWidth="68.0" text="Wicket" />
+            <TableColumn fx:id="t1r" prefWidth="50.0" text="R" />
+            <TableColumn fx:id="t1b" prefWidth="48.0" text="B" />
+            <TableColumn fx:id="t14" prefWidth="38.0" text="4s" />
+            <TableColumn fx:id="t16" prefWidth="39.0" text="6s" />
+            <TableColumn fx:id="t1sr" prefWidth="54.0" text="SR" />
+        </columns>
+      </TableView>
+      <TableView fx:id="t2bowl" layoutX="57.0" layoutY="563.0" prefHeight="117.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="t2bowll" prefWidth="122.0" text="Bowler" />
+          <TableColumn fx:id="t2ov" prefWidth="52.0" text="Ov" />
+            <TableColumn fx:id="t2m" prefWidth="51.0" text="M" />
+            <TableColumn fx:id="t2br" prefWidth="54.0" text="R" />
+            <TableColumn fx:id="t2bw" prefWidth="41.0" text="W" />
+            <TableColumn fx:id="t2ec" prefWidth="52.0" text="EC" />
+        </columns>
+      </TableView>
+      <TableView fx:id="t2bat" layoutX="533.0" layoutY="200.0" prefHeight="358.0" prefWidth="373.0">
+         <columns>
+            <TableColumn fx:id="t2batt" prefWidth="75.0" text="Batsman" />
+            <TableColumn fx:id="t2w" prefWidth="68.0" text="Wicket" />
+            <TableColumn fx:id="t2r" prefWidth="50.0" text="R" />
+            <TableColumn fx:id="t2b" prefWidth="48.0" text="B" />
+            <TableColumn fx:id="t24" prefWidth="38.0" text="4s" />
+            <TableColumn fx:id="t26" prefWidth="39.0" text="6s" />
+            <TableColumn fx:id="t2sr" prefWidth="54.0" text="SR" />
+         </columns>
+      </TableView>
+      <TableView fx:id="t1bowl" layoutX="533.0" layoutY="563.0" prefHeight="117.0" prefWidth="373.0">
+         <columns>
+            <TableColumn fx:id="t1bowll" prefWidth="122.0" text="Bowler" />
+            <TableColumn fx:id="t1ov" prefWidth="52.0" text="Ov" />
+            <TableColumn fx:id="t1m" prefWidth="51.0" text="M" />
+            <TableColumn fx:id="t1br" prefWidth="54.0" text="R" />
+            <TableColumn fx:id="t1bw" prefWidth="41.0" text="W" />
+            <TableColumn fx:id="t1ec" prefWidth="52.0" text="EC" />
+         </columns>
+      </TableView>
+      <Button layoutX="779.0" layoutY="79.0" mnemonicParsing="false" onAction="#print" text="Print">
+         <font>
+            <Font name="Ador Shodesh Normal" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

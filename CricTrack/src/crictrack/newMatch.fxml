@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="965.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="crictrack.NewMatchController">
+    <stylesheets>
+        <URL value="@menu.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="229.0" fitWidth="358.0" layoutX="304.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="117.0" styleClass="mainFxmlClass" text="Teams">
+         <font>
+            <Font name="Ador Shodesh Normal" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="156.0" styleClass="mainFxmlClass" text="Team 1:">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="184.0" layoutY="157.0" onKeyReleased="#t1WarningShow" />
+      <ChoiceBox fx:id="Team1List" layoutX="382.0" layoutY="157.0" prefHeight="31.0" prefWidth="74.0" />
+      <Label layoutX="521.0" layoutY="156.0" styleClass="mainFxmlClass" text="Team 2:">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t2" layoutX="619.0" layoutY="157.0" onKeyReleased="#t2WarningShow" />
+      <ChoiceBox fx:id="Team2List" layoutX="823.0" layoutY="158.0" prefHeight="31.0" prefWidth="74.0" />
+      <Label layoutX="61.0" layoutY="250.0" styleClass="mainFxmlClass" text="Toss won by ? ">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="tossT1" layoutX="268.0" layoutY="252.0" mnemonicParsing="false" onAction="#tosst1" styleClass="mainFxmlClass" text="Team 1">
+         <font>
+            <Font name="Ador Shodesh Normal" size="26.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="tossT2" layoutX="430.0" layoutY="252.0" mnemonicParsing="false" onAction="#tosst2" styleClass="mainFxmlClass" text="Team 2">
+         <font>
+            <Font name="Ador Shodesh Normal" size="26.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="61.0" layoutY="332.0" styleClass="mainFxmlClass" text="Opted to ">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="bat" layoutX="268.0" layoutY="334.0" mnemonicParsing="false" onAction="#optBat" styleClass="mainFxmlClass" text="Bat">
+         <font>
+            <Font name="Ador Shodesh Normal" size="26.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="bowl" layoutX="430.0" layoutY="334.0" mnemonicParsing="false" onAction="#optBowl" styleClass="mainFxmlClass" text="Bowl">
+         <font>
+            <Font name="Ador Shodesh Normal" size="26.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="61.0" layoutY="403.0" styleClass="mainFxmlClass" text="Overs:">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="oversBox" layoutX="138.0" layoutY="404.0" prefHeight="31.0" prefWidth="64.0" />
+      <Label layoutX="61.0" layoutY="480.0" styleClass="mainFxmlClass" text="Venue :">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="venue" layoutX="156.0" layoutY="481.0" onKeyReleased="#venueWarning" prefHeight="31.0" prefWidth="548.0" />
+      <Button layoutX="354.0" layoutY="583.0" mnemonicParsing="false" onAction="#backBt" prefHeight="51.0" prefWidth="102.0" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Ador Shodesh Normal" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="509.0" layoutY="583.0" mnemonicParsing="false" onAction="#startButton" prefHeight="51.0" prefWidth="102.0" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Ador Shodesh Normal" size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="t1Warning" layoutX="185.0" layoutY="197.0" onKeyReleased="#t1WarningShow" textFill="RED" />
+      <Label fx:id="t2Warning" layoutX="619.0" layoutY="197.0" onKeyReleased="#t2WarningShow" textFill="RED" />
+      <Label fx:id="venueWarn" layoutX="153.0" layoutY="522.0" textFill="RED" />
+      <Label fx:id="oversWarning" layoutX="251.0" layoutY="409.0" textFill="RED" />
+      <Label fx:id="teamNameAlert" layoutX="384.0" layoutY="208.0" textFill="RED" />
+      <Button layoutX="382.0" layoutY="114.0" mnemonicParsing="false" onAction="#imp1Click" prefHeight="32.0" prefWidth="74.0" text="Import" textFill="WHITE" />
+      <Button layoutX="824.0" layoutY="115.0" mnemonicParsing="false" onAction="#imp2Click" prefHeight="31.0" prefWidth="73.0" text="Import" textFill="WHITE" />
+   </children>
+</AnchorPane>

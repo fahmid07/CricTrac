@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="965.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crictrack.TeamsController">
+    <stylesheets>
+        <URL value="@menu.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="117.0" fitWidth="299.0" layoutX="333.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="team1Name" layoutX="157.0" layoutY="60.0" text="Team 1">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="team2Name" layoutX="722.0" layoutY="60.0" text="Team 1">
+         <font>
+            <Font name="Ador Shodesh Normal" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1p2" layoutX="88.0" layoutY="162.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p3" layoutX="88.0" layoutY="205.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p4" layoutX="88.0" layoutY="248.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p5" layoutX="88.0" layoutY="291.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p6" layoutX="88.0" layoutY="333.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p7" layoutX="88.0" layoutY="376.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p8" layoutX="88.0" layoutY="419.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p9" layoutX="88.0" layoutY="462.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p10" layoutX="88.0" layoutY="502.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p11" layoutX="88.0" layoutY="545.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p12" layoutX="88.0" layoutY="588.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p13" layoutX="88.0" layoutY="631.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t1p1" layoutX="88.0" layoutY="120.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p2" layoutX="654.0" layoutY="163.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p3" layoutX="654.0" layoutY="206.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p4" layoutX="654.0" layoutY="249.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p5" layoutX="654.0" layoutY="292.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p6" layoutX="654.0" layoutY="334.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p7" layoutX="654.0" layoutY="377.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p8" layoutX="654.0" layoutY="420.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p9" layoutX="654.0" layoutY="463.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p10" layoutX="654.0" layoutY="503.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p11" layoutX="654.0" layoutY="546.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p12" layoutX="654.0" layoutY="589.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p13" layoutX="654.0" layoutY="632.0" prefHeight="31.0" prefWidth="223.0" />
+      <TextField fx:id="t2p1" layoutX="654.0" layoutY="121.0" prefHeight="31.0" prefWidth="223.0" />
+      <Button layoutX="429.0" layoutY="406.0" mnemonicParsing="false" onAction="#mainMatchStart" prefHeight="54.0" prefWidth="108.0" text="Start" textFill="WHITE">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="429.0" layoutY="496.0" mnemonicParsing="false" onAction="#cancelMatch" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Ador Shodesh Normal" size="32.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="68.0" fitWidth="163.0" layoutX="420.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@vs.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
